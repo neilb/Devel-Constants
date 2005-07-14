@@ -1,0 +1,13 @@
+---
+name: Devel-Constants
+version: 1.00
+author: ~
+abstract: translates constants back to named symbols
+license: perl
+build_requires:
+  Test::More: 0.60
+provides:
+  Devel::Constants:
+    file: lib/Devel/Constants.pm
+    version: 1.00
+generated_by: Module::Build version 0.2611
