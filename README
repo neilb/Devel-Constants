@@ -1,8 +1,8 @@
-Devel::Constants version 1.00
+Devel::Constants version 1.01
 =============================
 
-This module helps to translate values back to named constants.  Be sure to use
-it before you or any module you use uses the constant pragma.
+This module helps to translate values back to named constants.
+Be sure to use it before you or any module you use uses the constant pragma.
 
 INSTALLATION
 
