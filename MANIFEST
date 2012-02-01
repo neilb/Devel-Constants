@@ -4,10 +4,8 @@ Makefile.PL
 META.yml
 MANIFEST
 README
-SIGNATURE
 t/0-signature.t
 t/constants.t
 t/import.t
 t/pod.t
 t/pod-coverage.t
-SIGNATURE    Added here by Module::Build
