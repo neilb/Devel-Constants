@@ -3,7 +3,7 @@ package Devel::Constants;
 use strict;
 use vars qw( $VERSION %EXPORT_OK );
 
-$VERSION = '1.00';
+$VERSION = '1.01';
 
 %EXPORT_OK =
 (
@@ -260,6 +260,8 @@ Perlmonks.org for the germ of the idea
 
 Thanks also to Tim Potter and Stephanie Wehner for L<NetPacket::TCP>.
 
+Version 1.01 released by Neil Bowers E<lt>neilb at cpan dot orgE<gt>.
+
 =head1 COPYRIGHT
 
 Copyright (c) 2001, 2005 chromatic.  Some rights reserved.
@@ -269,6 +271,20 @@ terms as Perl 5.8.x itself.
 
 =head1 SEE ALSO
 
-L<constant>
+=over 4
+
+=item * L<constant>
+
+=item * L<Constant::Generate>
+
+Provides the ability to define constants, a reverse mapping function,
+and more besides.
+
+=item * L<http://neilb.org/reviews/constants.html>
+
+A review of all CPAN modules related to the definition and manipulation
+of constants and read-only variables.
+
+=back
 
 =cut
