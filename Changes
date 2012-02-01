@@ -3,7 +3,11 @@ Revision history for perl module Devel::Constants
 1.01 2012-02-01
 
     - Chromatic added me (NEILB) as a co-maintainer
-    - dropped SIGNATURE
+    - dropped SIGNATURE and test for it (with chromatic's ok)
+    - Added mention of Constant::Generate and my review of constant modules
+      to SEE ALSO in pod
+    - Changed leading tabs to spaces in code samples in pod
+    - Added this Changes file
 
 1.00 2005-07-14
 
