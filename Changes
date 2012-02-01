@@ -1,0 +1,11 @@
+Revision history for perl module Devel::Constants
+
+1.01 2012-02-01
+
+    - Chromatic added me (NEILB) as a co-maintainer
+    - dropped SIGNATURE
+
+1.00 2005-07-14
+
+    - first release by Chromatic
+
