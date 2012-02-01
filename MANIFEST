@@ -5,7 +5,6 @@ META.yml
 MANIFEST
 README
 Changes
-t/0-signature.t
 t/constants.t
 t/import.t
 t/pod.t
