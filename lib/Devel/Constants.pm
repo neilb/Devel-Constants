@@ -114,15 +114,15 @@ Devel::Constants - translates constants back to named symbols
 
 =head1 SYNOPSIS
 
-	# must precede use constant
-	use Devel::Constants 'flag_to_names';
-
-	use constant A => 1;
-	use constant B => 2;
-	use constant C => 4;
-
-	my $flag = A | B;
-	print "Flag is: ", join(' and ', flag_to_names($flag) ), "\n";
+  # must precede use constant
+  use Devel::Constants 'flag_to_names';
+  
+  use constant A => 1;
+  use constant B => 2;
+  use constant C => 4;
+  
+  my $flag = A | B;
+  print "Flag is: ", join(' and ', flag_to_names($flag) ), "\n";
 
 =head1 DESCRIPTION
 
@@ -150,64 +150,64 @@ Passing the C<package> flag to Devel::Constants with a valid package name will
 make the module intercept all constants subsequently declared within that
 package.  For example, in the main package you might say:
 
-	use Devel::Constants package => NetPacket::TCP;
-	use NetPacket::TCP;
+  use Devel::Constants package => NetPacket::TCP;
+  use NetPacket::TCP;
 
 All of the TCP flags declared within L<NetPacket::TCP> are now available.
 
 It is also possible to pass in a hash reference in which to store the constant
 values and names:
 
-	my %constant_map;
-	use Devel::Constants \%constant_map;
-
-	use constant NAME	=> 1;
-	use constant RANK	=> 2;
-	use constant SERIAL	=> 4;
-
-	print join(' ', values %constant_map), "\n";
+  my %constant_map;
+  use Devel::Constants \%constant_map;
+  
+  use constant NAME	=> 1;
+  use constant RANK	=> 2;
+  use constant SERIAL	=> 4;
+  
+  print join(' ', values %constant_map), "\n";
 
 =head2 EXPORT
 
 By default, Devel::Constants exports no subroutines.  You can import its two
-helper functions optionally by passing them on the use line: 
+helper functions optionally by passing them on the use line:
 
-	use Devel::Constants qw( flag_to_names to_name );
-
-	use constant FOO => 1;
-	use constant BAR => 2;
-
-	print flag_to_names(2);
-	print to_name(1);
+  use Devel::Constants qw( flag_to_names to_name );
+  
+  use constant FOO => 1;
+  use constant BAR => 2;
+  
+  print flag_to_names(2);
+  print to_name(1);
 
 You may also import these functions with different names, if necessary.  Pass
 the alternate name after the function name.  B<Beware> that this is the most
 fragile of all options.  If you do not pass a name, Devel::Constants may become
 confused:
 
-	# good
-	use Devel::Constants 
-		flag_to_names => 'resolve',
-		'to_name';
+  # good
+  use Devel::Constants
+    flag_to_names => 'resolve',
+    'to_name';
 	
-	# WILL WORK IN SPITE OF POOR FORM (the author thinks he's clever)
-	use Devel::Constants
-		'to_name',
-		flag_to_names => 'resolve';
+  # WILL WORK IN SPITE OF POOR FORM (the author thinks he's clever)
+  use Devel::Constants
+    'to_name',
+    flag_to_names => 'resolve';
 
-	# WILL PROBABLY BREAK, SO DO NOT USE
-	use Devel::Constants
-		'to_name',
-		package => WD::Kudra;
+  # WILL PROBABLY BREAK, SO DO NOT USE
+  use Devel::Constants
+    'to_name',
+    package => WD::Kudra;
 
 Passing the C<import> flag will import any requested functions into the named
 package.  This is occasionally helpful, but it will overwrite any existing
 functions in the named package.  Be a good neighbor:
 
-	use Devel::Constants
-		import => 'my::other::namespace',
-		'flag_to_names',
-		'to_name';
+  use Devel::Constants
+    import => 'my::other::namespace',
+    'flag_to_names',
+    'to_name';
 
 Note that L<constant> also exports subroutines, by design.
 
