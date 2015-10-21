@@ -1,4 +1,14 @@
-Revision history for perl module Devel::Constants
+Revision history for Perl module Devel::Constants
+
+1.03 2014-01-30
+
+    - We now "use warnings", and disable them in one small scope.
+    - Specify min Perl version as 5.6.0
+
+1.02 2013-11-03
+
+    - Switched to Dist::Zilla
+    - Added github repo to metadata
 
 1.01 2012-02-01
 

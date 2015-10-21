@@ -1,9 +1,11 @@
 package Devel::Constants;
 
+use 5.006;
 use strict;
+use warnings;
 use vars qw( $VERSION %EXPORT_OK );
 
-$VERSION = '1.01';
+$VERSION = '1.03';
 
 %EXPORT_OK =
 (
@@ -15,7 +17,7 @@ use constant;
 use subs 'oldimport';
 
 {
-	local $^W = 0;
+    no warnings;
 	*oldimport        = \&constant::import;
 	*constant::import = \&_newimport;
 }
