@@ -1,5 +1,9 @@
 Revision history for Perl module Devel::Constants
 
+1.04 2015-10-21 NEILB
+    - Added [MetaJSON] to dist.ini so we'd get a META.json in the release
+    - Include a hand-rolled README
+
 1.03 2014-01-30
 
     - We now "use warnings", and disable them in one small scope.

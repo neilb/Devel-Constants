@@ -5,8 +5,6 @@ use strict;
 use warnings;
 use vars qw( $VERSION %EXPORT_OK );
 
-$VERSION = '1.03';
-
 %EXPORT_OK =
 (
 	flag_to_names => \&flag_to_names,
