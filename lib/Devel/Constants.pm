@@ -262,6 +262,10 @@ Thanks also to Tim Potter and Stephanie Wehner for L<NetPacket::TCP>.
 
 Version 1.01 released by Neil Bowers E<lt>neilb at cpan dot orgE<gt>.
 
+=head1 REPOSITORY
+
+L<https://github.com/neilb/Devel-Constants>
+
 =head1 COPYRIGHT
 
 Copyright (c) 2001, 2005 chromatic.  Some rights reserved.
